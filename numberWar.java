@@ -10,7 +10,7 @@ public class numberWar {
 		JFrame frame = new JFrame("Number War");	// creates the JFrame and titles it
 	
 		player = new JTextField();
-		player.setBounds(25,100,125,20);
+		player.setBounds(25,200,125,20);
 		frame.add(player);
 		
 		// these must be after everything or else other components will not display
