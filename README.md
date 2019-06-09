@@ -1,4 +1,4 @@
 # Number-War
-War! A java game similar to the card game "War" except without the cards.
+Number War! A java game that makes you verse the computer in an ultimate game of chance! 
 
 <img src = "images/numberWar.png" width = "300" height = "400">
