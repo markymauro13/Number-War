@@ -9,7 +9,7 @@ public class numberWar implements ActionListener {
 
 	private JTextField player, computer, winner, decoy;
 	private JButton go;
-	private JLabel playerLabel, computerLabel, numberWar;
+	private JLabel playerLabel, computerLabel, numberWar, gameDesc, gameDesc1;
 	private ImageIcon thumbsUp, thumbsDown;
 	private JLabel tU,tD;
 	private int range = 100;
@@ -17,12 +17,25 @@ public class numberWar implements ActionListener {
 	
 	public numberWar() {
 		JFrame frame = new JFrame("Number War");	// creates the JFrame and titles it
+
+		Font font = new Font("Segoe UI",Font.BOLD,15);
+		gameDesc = new JLabel("Verse the computer and see who wins!");
+		gameDesc.setForeground(Color.BLACK);
+		gameDesc.setFont(font);
+		gameDesc.setBounds(60,-20,400,200);
+		frame.add(gameDesc);
 		
-		Font font0 = new Font("Segoe UI",Font.BOLD,40);
+		gameDesc1 = new JLabel("Person/Robot with the highest number wins.");
+		gameDesc1.setForeground(Color.BLACK);
+		gameDesc1.setFont(font);
+		gameDesc1.setBounds(45,10,400,200);
+		frame.add(gameDesc1);
+		
+		Font font0 = new Font("Segoe UI",Font.BOLD,30);
 		numberWar = new JLabel("Number War!");
 		numberWar.setForeground(Color.BLACK);
-		playerLabel.setFont(font0);
-		playerLabel.setBounds(55,160,125,30);
+		numberWar.setFont(font0);
+		numberWar.setBounds(100,-70,2000,200);
 		frame.add(numberWar);
 		
 		Font font1 = new Font("Segoe UI",Font.BOLD,20);	
@@ -68,7 +81,7 @@ public class numberWar implements ActionListener {
 		go.addActionListener(this);
 	    winner.setEditable(true);
 		
-	    frame.getContentPane().setBackground(Color.lightGray);
+	    frame.getContentPane().setBackground(Color.pink);
 		frame.setSize(400,450);	// sets the size of the frame
         frame.setLayout(null);	// sets layout   
 		frame.setVisible(true);	// sets JFrame to be visible
